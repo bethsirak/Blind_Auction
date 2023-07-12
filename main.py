@@ -48,6 +48,5 @@ while run_again:
     if additional_bidders == "no":
         run_again = False
         cal_winner(bidding_list)
-        # cal_winner(bidding_list)
-        # print(cal_winner(bidders))
+     
    
