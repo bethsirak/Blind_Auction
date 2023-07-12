@@ -21,15 +21,21 @@ def user_bid_dictionary(name, bid):
     bidding_list.append(bidders)
     clear()
     print(bidding_list)
+    return
 
-# def cal_winner(bidding_list):
-#     for dictionary in bidding_list:
-#         for bid_value in dictionary[name]:
-#          highest_bid = dictionary[name]
-#          if bid_value > highest_bid:
-#             bid_value = highest_bid
-#         print(f"The winner is {name} and the higest bid was {highest_bid}")
-#     return
+def cal_winner(bidding_list):
+    winning_bid = 0
+    for item in range(len(bidding_list)):
+        each_dictionary = bidding_list[item]
+        # print(each_dictionary)
+        for key in each_dictionary:
+            int_values = int(each_dictionary[key])
+            if int_values > winning_bid:
+                winning_bid = int_values
+                winner = key
+
+    print(f"The winner is {winner} with a bid of {winning_bid} ")
+    return
 
     
 run_again = True
@@ -41,6 +47,7 @@ while run_again:
     user_bid_dictionary(name, bid)
     if additional_bidders == "no":
         run_again = False
+        cal_winner(bidding_list)
         # cal_winner(bidding_list)
         # print(cal_winner(bidders))
    
