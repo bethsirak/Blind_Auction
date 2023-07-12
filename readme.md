@@ -18,18 +18,15 @@ Welcome to the Blind Auction! This program allows multiple bidders to participat
 
 ## Dependencies
 
-This program utilizes the following external libraries:
+This program requires the following dependencies:
 
-- `os`: Provides a way to clear the terminal screen.
-- `art`: Enables the display of ASCII art (logo).
-
-Please make sure these dependencies are installed before running the program.
+- Python 3.x
 
 ## Getting Started
 
 1. Clone this repository to your local machine.
-2. Ensure that the required dependencies are installed.
-3. Run the program using a Python interpreter.
+2. Ensure that Python 3.x is installed.
+3. Run the program using a Python interpreter: `python blind_auction.py`
 4. Follow the on-screen prompts to participate in the auction.
 5. Once all bidders have submitted their bids, the winner will be announced.
 
@@ -48,14 +45,12 @@ Are there any other bidders? (yes/no) no
 The winner is Jane with a bid of 700.
 
 
+## ASCII Art
+
+The program uses ASCII art for visual appeal. The art is stored in a separate file named `art.py`. Make sure to keep this file in the same directory as the program for proper execution.
+
 ## Program Complexity
 
-The program utilizes a nested data structure to store the bids. Each bid is stored as a dictionary within a list. This allows for efficient tracking and retrieval of bidder information.
-
-## Additional Notes
-
-- The program uses the `clear` function from the `os` library to provide a clean and user-friendly interface.
-- The `art` library is used to display an attractive logo at the beginning of the program.
+The program utilizes a nested data structure to store the bids. Each bid is stored as a dictionary within a list. This was to test my knowledge and understanding of the different data structures with a higher complexity
 
 Good luck with your bidding!
-
